@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Tailwind CSS 4 uses CSS-first configuration */
+@theme {
+  /* Colors */
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-secondary: #1e293b;
+  --color-border: #27272a;
+  --color-muted: #71717a;
+
+  /* Severity colors */
+  --color-severity-info: #3b82f6;
+  --color-severity-warning: #f59e0b;
+  --color-severity-error: #ef4444;
+  --color-severity-critical: #dc2626;
+
+  /* Fonts */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    monospace;
+}
+
+/* Dark mode by default */
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Monaco editor container fix */
+.monaco-editor-container {
+  min-height: 400px;
+}

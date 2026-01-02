@@ -1,0 +1,13 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // React Compiler disabled (requires babel-plugin-react-compiler)
+  // reactCompiler: true,
+
+  // Environment variables exposed to the browser
+  env: {
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000",
+  },
+};
+
+export default nextConfig;
